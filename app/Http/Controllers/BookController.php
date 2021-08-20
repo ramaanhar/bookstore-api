@@ -21,7 +21,8 @@ class BookController extends Controller
 
     public function index()
     {
-        $book = Book::all();
+        // $book = Book::all();
+        $book = Book::paginate(3);
 
         try {
             $response = [

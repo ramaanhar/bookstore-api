@@ -21,7 +21,7 @@ class CreateBooksTable extends Migration
             $table->double('weight');
             $table->integer('price');
             $table->integer('stock');
-            $table->integer('seen_by');
+            // $table->integer('seen_by');
             $table->timestamps();
 
             $table->foreign('author_id')->references('id')->on('authors');
